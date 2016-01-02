@@ -2,11 +2,11 @@ import {Component, OnInit} from 'angular2/core';
 import {ROUTER_DIRECTIVES} from 'angular2/router';
 import {DrinkService} from '../../service/drink';
 import {Drink} from '../../service/drink.interface';
-import {DetailComponent} from '../detail/detail';
+import {DetailComponent} from '../detail/detail-admin';
 
 @Component({
   selector: 'drink-list',
-  templateUrl: 'app/drink/component/list/list.html',
+  templateUrl: 'app/drink/component/list/list-admin.html',
   directives: [ROUTER_DIRECTIVES]
 })
 

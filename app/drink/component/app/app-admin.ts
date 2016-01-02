@@ -1,12 +1,12 @@
 import {Component} from 'angular2/core';
 import {RouteConfig, ROUTER_DIRECTIVES} from 'angular2/router';
-import {ListComponent} from '../list/list';
-import {DetailComponent} from '../detail/detail';
+import {ListComponent} from '../list/list-admin';
+import {DetailComponent} from '../detail/detail-admin';
 import {DrinkService} from '../../service/drink';
 
 @Component({
   selector: 'my-app',
-  templateUrl: 'app/drink/component/app/app.html',
+  templateUrl: 'app/drink/component/app/app-admin.html',
   directives: [ROUTER_DIRECTIVES],
   providers: [DrinkService]
 

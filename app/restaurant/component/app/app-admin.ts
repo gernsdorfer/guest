@@ -2,14 +2,14 @@ import {Component} from 'angular2/core';
 import {Title} from 'angular2/platform/browser';
 import {Router, Route, RouteConfig, ROUTER_DIRECTIVES, RouteData} from 'angular2/router';
 import {RouteParams} from 'angular2/router';
-import {AppComponent as DrinkApp} from '../../../drink/component/app/app';
-import {DashboardComponent} from '../dashboard/dashboard';
+import {AppComponent as DrinkApp} from '../../../drink/component/app/app-admin';
+import {DashboardComponent} from '../dashboard/dashboard-admin';
 
 
 @Component({
   selector: 'my-app',
-  templateUrl: 'app/restaurant-admin/component/app/app.html',
-  styleUrls: ['app/restaurant-admin/component/app/app.css'],
+  templateUrl: 'app/restaurant/component/app/app-admin.html',
+  styleUrls: ['app/restaurant/component/app/app-admin.css'],
   directives: [ROUTER_DIRECTIVES]
 })
 

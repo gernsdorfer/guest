@@ -7,13 +7,13 @@ import {Drink} from '../../service/drink.interface';
 
 @Component({
   selector: 'drink-detail',
-  templateUrl: 'app/drink/component/detail/detail.html',
+  templateUrl: 'app/drink/component/detail/detail-admin.html',
   directives: [ROUTER_DIRECTIVES]
 })
 export class DetailComponent implements OnInit  {
   public drink: Drink;
   public submitted = false;
-  
+
   constructor(private _drinkService: DrinkService,
     private _routeParams: RouteParams) {
   }
