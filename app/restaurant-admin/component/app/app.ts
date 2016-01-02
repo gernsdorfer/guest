@@ -22,7 +22,7 @@ import {DashboardComponent} from '../dashboard/dashboard';
     useAsDefault: true
   },
   {
-      path: '/drink/...',
+      path: '/drinks/...',
       name: 'Drink',
       component: DrinkApp
   }

@@ -2,6 +2,7 @@ import {Component, OnInit} from 'angular2/core';
 import {ROUTER_DIRECTIVES} from 'angular2/router';
 import {DrinkService} from '../../service/drink';
 import {Drink} from '../../service/drink.interface';
+import {DetailComponent} from '../detail/detail';
 
 @Component({
   selector: 'drink-list',

@@ -7,5 +7,6 @@ Liste der Getränke
   <tr *ngFor="#drink of drinkList">
       <td>{{drink.name}} </td>
       <td>{{drink.price}} </td>
+      <td><a [routerLink]="['Detail',{id: drink.id}]">edit</a></td>
   </tr>
 </table>

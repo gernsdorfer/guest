@@ -1,6 +1,7 @@
 import {Component} from 'angular2/core';
 import {RouteConfig, ROUTER_DIRECTIVES} from 'angular2/router';
 import {ListComponent} from '../list/list';
+import {DetailComponent} from '../detail/detail';
 import {DrinkService} from '../../service/drink';
 
 @Component({
@@ -13,10 +14,15 @@ import {DrinkService} from '../../service/drink';
 
 @RouteConfig([
   {
-    path: '/list',
+    path: '/',
     name: 'List',
     component: ListComponent,
     useAsDefault: true
+  },
+  {
+    path: '/:id',
+    name: 'Detail',
+    component: DetailComponent
   }
 ])
 

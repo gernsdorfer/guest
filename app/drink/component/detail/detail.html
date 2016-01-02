@@ -1,0 +1,24 @@
+<a [routerLink]="['List']">zurück</a><br>
+
+<div *ngIf="drink">
+
+  {{drink.name}}<br>
+  <form (ngSubmit)="onSubmit()" #drinkForm="ngForm">
+    <div>
+        Name:<input type="text" required
+            [(ngModel)]="drink.name"
+            ngControl="name"  #name="ngForm" >
+            <div [hidden]="name.valid" >Bitte einen Namen eingaben </div>
+     </div>
+     <div>
+             Preis:<input type="text" required
+                 [(ngModel)]="drink.price"
+                 ngControl="price"  #price="ngForm" >
+                 <div [hidden]="price.valid" >Bitte einen validen Preis eingaben </div>
+     </div><br>
+     <div *ngIf="submitted">Daten wurden gespeichert</div><br>
+     <button type="submit" class="btn btn-default"
+             [disabled]="!drinkForm.form.valid">Submit</button>
+   </form>
+</div>
+<div *ngIf="!drink">wird geladen ...</div>
