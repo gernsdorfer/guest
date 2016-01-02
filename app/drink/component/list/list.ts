@@ -4,7 +4,7 @@ import {DrinkService} from '../../service/drink';
 import {Drink} from '../../service/drink.interface';
 
 @Component({
-  selector: 'card-list',
+  selector: 'drink-list',
   templateUrl: 'app/drink/component/list/list.html',
   directives: [ROUTER_DIRECTIVES]
 })
