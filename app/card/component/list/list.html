@@ -1,6 +1,11 @@
 Liste der Getränke
-<ul>
-    <li *ngFor="#drink of drinkList">
-      {{drink.name}}
-    </li>
-</ul>
+<table border="1" >
+  <tr>
+    <th>Name</th>
+    <th>Preis</th>
+  </tr>
+  <tr *ngFor="#drink of drinkList">
+      <td>{{drink.name}} </td>
+      <td>{{drink.price}} </td>
+  </tr>
+</table>
