@@ -5,7 +5,7 @@ import {Drink} from '../../service/drink.interface';
 
 @Component({
   selector: 'card-list',
-  templateUrl: 'app/card/component/list/list.html',
+  templateUrl: 'app/drink/component/list/list.html',
   directives: [ROUTER_DIRECTIVES]
 })
 

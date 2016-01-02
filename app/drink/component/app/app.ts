@@ -5,7 +5,7 @@ import {DrinkService} from '../../service/drink';
 
 @Component({
   selector: 'my-app',
-  templateUrl: 'app/card/component/app/app.html',
+  templateUrl: 'app/drink/component/app/app.html',
   directives: [ROUTER_DIRECTIVES],
   providers: [DrinkService]
 

@@ -2,7 +2,7 @@ import {Component} from 'angular2/core';
 import {Title} from 'angular2/platform/browser';
 import {Router, Route, RouteConfig, ROUTER_DIRECTIVES, RouteData} from 'angular2/router';
 import {RouteParams} from 'angular2/router';
-import {AppComponent as CardApp} from '../../../card/component/app/app';
+import {AppComponent as CardApp} from '../../../drink/component/app/app';
 import {DashboardComponent} from '../dashboard/dashboard';
 
 
