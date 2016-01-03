@@ -1,0 +1,12 @@
+Liste der Getränke
+<table border="1" >
+  <tr>
+    <th>Name</th>
+    <th>Preis</th>
+  </tr>
+  <tr *ngFor="#meal of mealList">
+      <td>{{meal.name}} </td>
+      <td>{{meal.price}} </td>
+      <td><a [routerLink]="['Detail',{id: meal.id}]">bearbeiten</a></td>
+  </tr>
+</table>

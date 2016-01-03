@@ -13,17 +13,31 @@ import {Drink} from '../../service/drink.interface';
 export class DetailComponent implements OnInit  {
   public drink: Drink;
   public submitted = false;
+  public drinkId: number;
 
   constructor(private _drinkService: DrinkService,
     private _routeParams: RouteParams) {
   }
- onSubmit() {
-   this.submitted = true;
- }
-  ngOnInit() {
-    if (!this.drink) {
-      let id = +this._routeParams.get('id');
-      this._drinkService.get(id).then(drink => this.drink = drink);
+  onSubmit() {
+    if(!this.drinkId) {
+      this._drinkService.post(this.drink);
     }
+    this.submitted = true;
+  }
+
+  loadDrinkById () {
+    this._drinkService.get(this.drinkId).then(drink => this.drink = drink);
+  }
+
+ngOnInit() {
+    this.drinkId = +this._routeParams.get('id');
+    if(this.drinkId) {
+      this.loadDrinkById();
+    } else {
+      this.drink ={
+        name: ''
+      };
+    }
+
   }
 }

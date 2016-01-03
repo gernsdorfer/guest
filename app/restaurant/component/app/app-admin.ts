@@ -3,6 +3,7 @@ import {Title} from 'angular2/platform/browser';
 import {Router, Route, RouteConfig, ROUTER_DIRECTIVES, RouteData} from 'angular2/router';
 import {RouteParams} from 'angular2/router';
 import {AppComponent as DrinkApp} from '../../../drink/component/app/app-admin';
+import {AppComponent as MealApp} from '../../../meal/component/app/app-admin';
 import {DashboardComponent} from '../dashboard/dashboard-admin';
 
 
@@ -25,6 +26,11 @@ import {DashboardComponent} from '../dashboard/dashboard-admin';
       path: '/drinks/...',
       name: 'Drink',
       component: DrinkApp
+  },
+  {
+      path: '/meals/...',
+      name: 'Meal',
+      component: MealApp
   }
 
 ])
