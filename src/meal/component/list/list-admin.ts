@@ -6,7 +6,7 @@ import {DetailComponent} from '../detail/detail-admin';
 
 @Component({
   selector: 'drink-list',
-  templateUrl: 'app/meal/component/list/list-admin.html',
+  templateUrl: 'src/meal/component/list/list-admin.html',
   directives: [ROUTER_DIRECTIVES]
 })
 

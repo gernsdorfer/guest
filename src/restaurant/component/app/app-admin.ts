@@ -9,8 +9,8 @@ import {DashboardComponent} from '../dashboard/dashboard-admin';
 
 @Component({
   selector: 'my-app',
-  templateUrl: 'app/restaurant/component/app/app-admin.html',
-  styleUrls: ['app/restaurant/component/app/app-admin.css'],
+  templateUrl: 'src/restaurant/component/app/app-admin.html',
+  styleUrls: ['src/restaurant/component/app/app-admin.css'],
   directives: [ROUTER_DIRECTIVES]
 })
 

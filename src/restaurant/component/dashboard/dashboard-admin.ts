@@ -3,8 +3,8 @@ import {ROUTER_DIRECTIVES} from 'angular2/router';
 
 @Component({
   selector: 'dashboard',
-  templateUrl: 'app/restaurant/component/dashboard/dashboard-admin.html',
-  styleUrls: ['app/restaurant/component/dashboard/dashboard-admin.css'],
+  templateUrl: 'src/restaurant/component/dashboard/dashboard-admin.html',
+  styleUrls: ['src/restaurant/component/dashboard/dashboard-admin.css'],
   directives: [ROUTER_DIRECTIVES]
 })
 

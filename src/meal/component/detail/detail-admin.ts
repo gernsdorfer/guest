@@ -7,7 +7,7 @@ import {Meal} from '../../service/meal.interface';
 
 @Component({
   selector: 'drink-detail',
-  templateUrl: 'app/meal/component/detail/detail-admin.html',
+  templateUrl: 'src/meal/component/detail/detail-admin.html',
   directives: [ROUTER_DIRECTIVES]
 })
 export class DetailComponent implements OnInit  {
