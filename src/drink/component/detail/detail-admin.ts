@@ -34,9 +34,7 @@ ngOnInit() {
     if(this.drinkId) {
       this.loadDrinkById();
     } else {
-      this.drink ={
-        name: ''
-      };
+      this.drink.name ='';
     }
 
   }

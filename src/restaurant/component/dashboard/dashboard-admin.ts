@@ -5,7 +5,7 @@ import {ROUTER_DIRECTIVES} from 'angular2/router';
   selector: 'dashboard',
   templateUrl: 'src/restaurant/component/dashboard/dashboard-admin.html',
   styleUrls: ['src/restaurant/component/dashboard/dashboard-admin.css'],
-  directives: [ROUTER_DIRECTIVES]
+  directives: [ROUTER_DIRECTIVES]  
 })
 
 

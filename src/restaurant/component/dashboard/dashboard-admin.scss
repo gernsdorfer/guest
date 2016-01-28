@@ -1,0 +1,11 @@
+.dashboard-link-list {
+  width:100%;  
+  a{
+    text-decoration: none;
+    border:1 px solid red;
+  }
+  a:visited, a:link {color: #444;}
+  a:hover {color: white; background-color: #1171a3;}
+  a.router-link-active {color: white; background-color: #52b9e9;}
+
+}
